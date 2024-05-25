@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="center">Survey Data Form</h1>
+    <h3 class="center">Fill in your personal data correctly</h3>
+
+    <form action="POST" id="survey-form">
+      <label class="move" for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required />
+      <label class="move" for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required />
+      <label class="move" for="number">Age</label>
+      <input
+        type="number"
+        id="number"
+        min="15"
+        max="120"
+        placeholder="Your age"
+        required
+      />
+
+      <label class="move" for="country">Where are your from</label>
+      <select name="country" id="country">
+        <option value="" disabled selected>Select country</option>
+        <option value="USA United">USA United</option>
+        <option value="Australia">Australia</option>
+        <option value="Amerika">Amerika</option>
+        <option value="Japan">Japan</option>
+        <option value="Canada">Canada</option>
+      </select>
+
+      <label class="move" for="gender">Your Gender</label>
+      <label for="male">
+        <input type="radio" name="gender" id="male" />Male
+      </label>
+
+      <label for="famale">
+        <input type="radio" name="gender" id="famale" />Famale
+      </label>
+
+      <label class="move" for="work">Work experience</label>
+      <select name="work" id="work">
+        <option value="" disabled selected>Select option</option>
+        <option value="I'm Student">I'm Student</option>
+        <option value="< 5 years">< 5 Years</option>
+        <option value="> 5 years">> 5 Years</option>
+        <option value="Pension">Pension</option>
+      </select>
+
+      <label class="move" for="status">Your Status</label>
+
+      <label for="single">
+        <input type="radio" name="status" id="single" />Single
+      </label>
+
+      <label for="married">
+        <input type="radio" name="status" id="married" />Married
+      </label>
+
+      <label class="move" for="ms-word">What are your skills </label>
+      <label for="ms-word">
+        <input
+          type="checkbox"
+          name="skills"
+          id="ms-word"
+          value="ms-word"
+        />Microsoft Word
+      </label>
+
+      <label for="ms-excel">
+        <input
+          type="checkbox"
+          name="skills"
+          id="ms-excel"
+          value="ms-excel"
+        />Microsoft Excel
+      </label>
+
+      <label for="photoshop">
+        <input
+          type="checkbox"
+          name="skills"
+          id="photoshop"
+          value="photoshop"
+        />Photoshop
+      </label>
+
+      <label for="corel-draw">
+        <input
+          type="checkbox"
+          name="skills"
+          id="corel-draw"
+          value="corel-draw"
+        />Corel Draw
+      </label>
+
+      <label class="move" for="about-yourself"
+        >Explain in more detail about you</label
+      >
+      <textarea
+        name="about-yourself"
+        id="about-yourself"
+        cols="30"
+        rows="10"
+        placeholder="Written right here..."
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
